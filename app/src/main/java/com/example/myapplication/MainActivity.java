@@ -56,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
     public void gameStart( View view) {
         Random rand = new Random();
         userNumber = findViewById(R.id.userNumber);
-
         // make sure execptions like one appearing as an option is not a thing
-        if(Integer.parseInt(userNumber.getText().toString())<2) {
+        if(userNumber.getText().toString().equals("")){
+            Toast.makeText(MainActivity.this, "Please enter a number.", Toast.LENGTH_SHORT).show();
+        }else if(Integer.parseInt(userNumber.getText().toString())<2) {
             Toast.makeText(MainActivity.this, "Number must be greater than 1", Toast.LENGTH_SHORT).show();
         }else{
             startButton.setVisibility(View.INVISIBLE);
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         if(view.getTag().toString().equals(Integer.toString(correctAnswerPosition))){
             statusText.setText("YAY, Correct answer!");
         }else{
-            statusText.setText("Oh no, Wrong answer!");
+            statusText.setText("Oh no, The answer was "+ correctAnswer);
         }
 
     }
