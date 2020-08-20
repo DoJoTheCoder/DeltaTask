@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="30dp"
         android:text="Guess The Factor!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp" />
@@ -59,7 +59,7 @@
         android:layout_height="191dp"
         android:layout_below="@+id/userNumber"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="30dp"
         android:visibility="invisible">
 
         <Button
@@ -129,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/userNumber"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="#7AEF36"
         android:onClick="gameStart"
         android:padding="40dp"
@@ -145,7 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/statusText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:background="#FFAB40"
         android:onClick="resetGame"
         android:padding="10dp"
