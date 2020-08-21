@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button option2;
     Button option3;
     Button option4;
-    EditText userNumber;                              // use, number = Integer.parseInt("string")
+    EditText userNumber;
     TextView statusText;
     GridLayout optionArea;
     ArrayList<Integer> options= new ArrayList<Integer>();
@@ -30,12 +30,7 @@ public class MainActivity extends AppCompatActivity {
     int factorPostion;
     int wrongAnswer;
     int correctAnswerPosition;
-    // handle exeecptions like 1, 0, 2 and negetive numbers
-    /*
-        Log.i("output","");
-        Toast.makeText(MainActivity.this,"good job dude "+ myNumber.getText().toString(), Toast.LENGTH_SHORT).show();
-        {textview}.setText(Integer.toString({integer number}) )
-       */
+
 
 
     @Override
